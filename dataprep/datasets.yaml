@@ -1,0 +1,10 @@
+# Named dataset profiles. Select via --dataset <name>.
+# shard_dir is resolved against $DATA_ROOT (default ./data); absolute paths pass through.
+
+default:
+  description: "The 3 teacher foundation models distilled in the paper (Virchow2, UNI2-h, H-Optimus-1)"
+  teacher_dims:
+    virchow2: 1280
+    uni2: 1536
+    h-optimus-1: 1536
+  shard_dir: "shards"

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use MuCoDi, please cite the associated paper."
+title: "MuCoDi: Multi-Teacher Contrastive Distillation for Edge-Efficient Pathology Foundation Models"
+type: software
+version: 0.1.0
+date-released: 2026-07-25
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/KatherLab/MuCoDi"
+authors:
+  - family-names: Lenz
+    given-names: Tim
+  - family-names: Heide
+    given-names: Maurice
+  - family-names: Gustav
+    given-names: Marco
+  - family-names: Reitsam
+    given-names: Nic G.
+  - family-names: Kather
+    given-names: Jakob Nikolas
+    email: kather.jn@tu-dresden.de
+preferred-citation:
+  type: article
+  title: "Multi-Teacher Contrastive Distillation for Edge-Efficient Pathology Foundation Models"
+  authors:
+    - family-names: Lenz
+      given-names: Tim
+    - family-names: Heide
+      given-names: Maurice
+    - family-names: Gustav
+      given-names: Marco
+    - family-names: Reitsam
+      given-names: Nic G.
+    - family-names: Kather
+      given-names: Jakob Nikolas
+  year: 2026
+  url: "https://arxiv.org/abs/2607.05533"

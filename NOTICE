@@ -1,0 +1,38 @@
+MuCoDi — third-party attributions
+=================================
+
+This repository includes and adapts third-party code. The original MuCoDi code
+is licensed under CC BY-NC 4.0 (see LICENSE). Third-party components remain
+subject to their respective terms. Complete accompanying license texts are in
+LICENSES/.
+
+1. MoCo v3
+   Files: moco/loss.py, moco/loader.py, moco/__init__.py, and portions of the
+          training scaffold in main.py and utils/.
+   Copyright (c) Facebook, Inc. and its affiliates.
+   License: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0).
+   License text: LICENSES/CC-BY-NC-4.0.txt
+   Source: https://github.com/facebookresearch/moco-v3
+
+2. MobileOne
+   File: models/mobileone.py
+   Copyright (C) 2022 Apple Inc. All Rights Reserved.
+   License: Apple Inc. Software License Agreement.
+   License text: LICENSES/MOBILEONE_LICENSE.txt
+   Additional acknowledgement: LICENSES/MOBILEONE_ACKNOWLEDGEMENTS.txt
+   Source: https://github.com/apple/ml-mobileone
+
+3. RepViT
+   File: models/repvit.py
+   Adapted from THU-MIG/RepViT.
+   License: Apache License 2.0.
+   License text: LICENSES/APACHE-2.0.txt
+   Source: https://github.com/THU-MIG/RepViT
+
+   The `_make_divisible` helper is adapted from the TensorFlow models
+   repository under Apache License 2.0:
+   https://github.com/tensorflow/models
+
+The GaussianBlur and Solarize augmentations in moco/loader.py follow the
+augmentations used by SimCLR (https://arxiv.org/abs/2002.05709) and BYOL
+(https://arxiv.org/abs/2006.07733).

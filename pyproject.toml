@@ -1,0 +1,51 @@
+[project]
+name = "mucodi"
+version = "0.1.0"
+description = "Multi-teacher contrastive distillation for edge-efficient pathology foundation models"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "CC-BY-NC-4.0" }
+authors = [
+    { name = "Tim Lenz" },
+    { name = "Maurice Heide" },
+    { name = "Marco Gustav" },
+    { name = "Nic G. Reitsam" },
+    { name = "Jakob Nikolas Kather" },
+]
+keywords = [
+    "computational pathology",
+    "contrastive learning",
+    "knowledge distillation",
+    "foundation models",
+    "edge AI",
+]
+dependencies = [
+    "numpy>=2.0",
+    "pillow>=10.0",
+    "pyyaml>=6.0",
+    "timm>=1.0.24",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "wandb>=0.24.0",
+    "webdataset>=1.0.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/KatherLab/MuCoDi"
+Repository = "https://github.com/KatherLab/MuCoDi"
+Paper = "https://arxiv.org/abs/2607.05533"
+Workshop = "https://sites.google.com/view/ema2026"
+
+# Pull torch/torchvision from the CUDA wheel index. Triton does not publish an
+# aarch64 wheel, so the override is restricted to x86_64.
+[tool.uv]
+override-dependencies = ["triton ; platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128", marker = "sys_platform != 'darwin'" }]
+torchvision = [{ index = "pytorch-cu128", marker = "sys_platform != 'darwin'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
