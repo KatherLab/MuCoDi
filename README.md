@@ -2,6 +2,7 @@
 
 <a href="https://arxiv.org/abs/2607.05533"><img src="https://img.shields.io/badge/Preprint-arXiv-red"></a>
 <a href="https://sites.google.com/view/ema2026"><img src="https://img.shields.io/badge/Workshop-EMA4MICCAI%202026-blue"></a>
+<a href="#news"><img src="https://img.shields.io/badge/Best%20Paper%20Award-EMA4MICCAI%202026-gold"></a>
 <a href="#citation"><img src="https://img.shields.io/badge/Paper-Cite-blue"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey"></a>
 
@@ -10,7 +11,7 @@ Official pretraining implementation of:
 > **Multi-Teacher Contrastive Distillation for Edge-Efficient Pathology Foundation Models**  
 > Tim Lenz<sup>†</sup>, Maurice Heide<sup>†</sup>, Marco Gustav, Nic G. Reitsam, and Jakob Nikolas Kather  
 > <sup>†</sup> Equal contribution  
-> Accepted at the **2nd MICCAI Workshop on Efficient Medical AI (EMA4MICCAI 2026)**.
+> Accepted at the **2nd MICCAI Workshop on Efficient Medical AI (EMA4MICCAI 2026)**, where it received the **Best Paper Award**.
 
 ## Table of Contents
 
@@ -38,6 +39,7 @@ Computational pathology foundation models (PFMs) have advanced whole-slide image
 
 ## News
 
+- **[October 2026]** MuCoDi received the Best Paper Award at EMA4MICCAI 2026 in Strasbourg.
 - **[July 2026]** MuCoDi was accepted at the 2nd MICCAI Workshop on Efficient Medical AI (EMA4MICCAI 2026).
 - **[July 2026]** The MuCoDi preprint was released on arXiv.
 
